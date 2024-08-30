@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "google-auth-library": "^9.14.0",
+    "mongoose": "^8.5.4",
+    "whatwg-url": "^14.0.0"
+  }
+}
