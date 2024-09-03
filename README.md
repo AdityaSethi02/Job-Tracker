@@ -75,6 +75,20 @@ To use this extension, you will need to set up your own MongoDB database.
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas
 
+## Future Ideas
+
+**MongoDB to Google Sheets**
+
+1. **Google Sheets Integration:** Store data in a Google Sheet linked to the user's account.
+2. **Automatic Sheet Creation:** Create a new sheet for first-time users with a "New sheet created" alert to ensure that their data is stored.
+3. **Applications Link:** Add a button with a link to the Google Sheet, and alerts if no sheet is found.
+4. **Data Management:** Once the Google Sheet is created, all subsequent data entries will be added to this sheet. Users will be able to manage and review their job applications directly from the Google Sheet.
+5. **Use of Google Cloud Platform**: We use Google Cloud Platform to manage our Google Sheets integration and streamline data handling.
+
+
+
+
 ## Contact
 
 If you have any questions or feedback, feel free to reach out to me at adityasethi2004@gmail.com.
+
