@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const jobSchema = new mongoose.Schema({
-    companyName: {type: String, require: true},
-    position: {type: String, require: true},
-    domain: {type: String, require: true},
-    platform: {type: String, require: true},
+    companyName: {type: String, required: true},
+    position: {type: String, required: true},
+    domain: {type: String, required: true},
+    platform: {type: String, required: true},
     status: {type: String, default: "Applied"}
 });
 
