@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+type FormData = {
+  companyName: string;
+  position: string;
+  domain: string;
+  platform: string;
+  status: string;
+};
+
 const PopupForm: React.FC = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     companyName: '',
     position: '',
     domain: '',
@@ -20,15 +28,22 @@ const PopupForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Send formData to the backend to save in the database
-    await axios.post('http://localhost:5000/api/jobs', formData);
+    try
+    {
+      await axios.post('http://localhost:5000/api/jobs', formData);
 
-    setFormData({
-        companyName: '',
-        position: '',
-        domain: '',
-        platform: '',
-        status: 'Applied',
-    })
+      setFormData({
+          companyName: '',
+          position: '',
+          domain: '',
+          platform: '',
+          status: 'Applied',
+      })
+    }
+    catch (error)
+    {
+      console.log(error);
+    }
   };
 
   return (
